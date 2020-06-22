@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	</head>
+	<style>
+		.conLogin{
+			width:300px;
+			position: fixed;
+			left: 50%;
+			top: 50%;
+			padding: 60px;
+			margin-top:-210px;
+			margin-left: -205px;
+		}
+	</style>
+	<body>
+		<div class="conLogin">
+			<form action="/user/login" method="post">
+				<div>
+					账号：<input type="text" name="username" id="username" value="" placeholder="请输入用户名" />
+				</div>
+				<div>
+					密码：<input type="text" name="password" id="password" value="" placeholder="请输入密码" />
+				</div>
+				<div>
+					<button>登录</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

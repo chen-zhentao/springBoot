@@ -1,0 +1,35 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+#配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/aaa
+    username: root
+    password: 185030
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    cache: false #关闭缓存
+  mvc:
+    date-format: yyyy-MM-dd
+  jackson:
+    date-format: yyyy-MM-dd
+#    prefix: classpath:templates #默认的模板目录
+#    druid:
+#      initial-size: 初始化连接的数量
+
+#mybatis相关配置
+mybatis:
+  type-aliases-package: com.aaa.entity
+  mapper-locations: classpath:mapper/*.xml
+
+#控制日志打印sql命令
+#level:指定mapper接口所在的包
+logging:
+  level:
+    com:
+      aaa:
+        mapper: debug

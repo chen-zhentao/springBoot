@@ -1,0 +1,4 @@
+#激活指定的配置文件
+spring:
+  profiles:
+    active: dev
